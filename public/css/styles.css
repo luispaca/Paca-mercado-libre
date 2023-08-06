@@ -1,0 +1,96 @@
+:root{
+    --yellow: #EAC926;
+    --blue : #03264C;
+    --lightblue: #1259c3;
+    --darkGray : #666;
+    --lightGray : #ebebeb;
+    --green: #39b54a;
+    --white : #ffffff;
+    --black : #000000;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+header p{
+    text-align: center;
+}
+.bg-yellow{
+    background-color: var(--yellow)
+}
+.bg-light-grey{
+    background-color: var(--lightGray);
+}
+.logo{
+    width: 40%;
+}
+.bg-ml{
+    padding: 8px;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+nav ul li a{
+text-decoration: none;
+color: var(--black);
+}
+h3{
+    text-align: center;
+    color: grey;
+    margin: 8px;
+}
+.fa-bars{
+    background-color: var(--lightblue);
+    color : var(--white);
+    border: 1px solid --lightblue;
+    border-radius: 20%;
+    padding: 8px;
+}
+.details-product * + *{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.recommendations-card{
+    max-width: 150px;
+    display:flex;
+    flex-flow: column;
+    border-radius: 6px;
+    box-shadow: 0 0 0.1rem rgba(0,0, 0, 0.2);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+}
+.recommendations-card:hover{
+    box-shadow: 0 0 1.5rem rgba(0,0, 0, 0.2);
+}
+
+.details-product{
+   border-top: 1px solid rgb(230, 230,230);
+   padding: 1em;
+   display: flex;
+   flex-flow: column;
+}
+footer{
+    text-align: center;
+    background-color: var(--white);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 3px;
+}
+footer>ul>li{
+    list-style: none;
+}
+footer>ul>li{
+    margin-bottom: 15px;
+}
+footer i{
+    font-size: 2em;
+    color: var(--lightblue);
+}
+b{
+    font-size: 10px;
+    color: var(--darkGray);
+}
