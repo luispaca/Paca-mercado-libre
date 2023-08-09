@@ -9,8 +9,6 @@
     --black : #000000;
 }
 *{
-    padding: 0;
-    margin: 0;
     font-family: 'Roboto';
 }
 header p{
@@ -93,4 +91,34 @@ footer i{
 b{
     font-size: 10px;
     color: var(--darkGray);
+}
+main{
+    width: 90vw;
+}
+span>.fa-truck{
+    border: 1px solid #39b54a;
+    color: var(--green);
+    padding-right: 5px;
+    padding-bottom: 7px;
+    padding-left: 2px;
+    padding-top: 2px;
+    border-radius: 50%;
+}
+.product-info-desc{
+    color: var(--green);
+}
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+/*Tablet*/
+@media (min-width:520px) {
+    
+}
+/*Desktop*/
+@media (max-width: 1280px) {
+    
 }
