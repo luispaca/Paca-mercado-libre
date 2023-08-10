@@ -34,6 +34,13 @@ nav ul li a{
 text-decoration: none;
 color: var(--black);
 }
+nav>ul>li{
+    list-style: none;
+}
+nav > .burger-menu{
+    justify-content: center;
+    align-items: center;
+}
 h3{
     text-align: center;
     color: grey;
@@ -114,7 +121,11 @@ span>.fa-truck{
 .mb-10{
     margin-bottom: 10px;
 }
-/*Tablet*/
+/*Mobile*/
+@media(min-width:361px){
+
+}
+/*(Tablet*/
 @media (min-width:520px) {
     
 }
