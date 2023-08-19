@@ -45,6 +45,13 @@ p{
     text-align: center;
     margin: 5px;
 }
+.nav-header-lg{
+    width: 50%;
+}
+.nav-header-lg{
+    display: flex;
+    align-items: center;
+}
 nav ul li a{
     text-decoration: none;
     color: var(--black);
@@ -80,6 +87,7 @@ h3{
     color: grey;
     margin: 8px;
     text-align: center;
+    font-size: 24px;;
 }
 .container{
     display: flex;
@@ -111,12 +119,12 @@ article>img{
 
 .details-product{
     border-top: 1px solid var(--lightGray);
-    padding: 1em;
+    padding: 0.5em;
     display: flex;
-    flex-flow: column;
+    flex-wrap: wrap;
     background-color: var(--white);
 }
-article, .recommendations-card{
+article{
     margin-bottom: 10px;
 }
 article>div.details-product>div.truck-icon-container{
@@ -124,6 +132,7 @@ article>div.details-product>div.truck-icon-container{
     height: 30px;
     border-radius: 50%;
     border : 1px solid var(--green);
+    padding: 5px;
 }
 .truck-icon-container{
     right: 15px;
@@ -136,11 +145,30 @@ article>div.details-product>div.truck-icon-container{
 .details-product{
     border-radius: 6px;
 }
+.container,.recommendations-card{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.product-info-price{
+    margin-right: 8px;
+}
     span>i.fa-truck{
     color: var(--green);
 }
 .product-info-desc{
     color: var(--green);
+}
+.product-info-price{
+    font-size: 18px;
+}
+.product-info-des{
+    font-size: 16px;
+}
+.product-info-name{
+    font-size: 16px;
+}
+footer{
+    display: flex;
 }
 footer{
     text-align: center;
@@ -148,6 +176,9 @@ footer{
     margin: 10px;
     padding: 10px;
     border-radius: 3px;
+}
+.contentinfo{
+    display: flex;
 }
 footer>ul>li{
     list-style: none;
@@ -168,7 +199,13 @@ b{
     .md-mobile {
       width: 48%;
     }
-  }
+    .md-mobile-footer{
+        flex-direction: column;
+    }
+    p.text-icon{
+        width: 100%;
+    }
+}
 /* Laptop */
   @media (min-width: 769px) {
     .lg-desktop {
@@ -179,5 +216,8 @@ b{
     }
   }
 /* Desktop */
-  @media (min-width: 1281px) {
+@media (min-width: 1281px) {
+    .lg-desktop-footer{
+        flex-direction: row;
+    }
   }
