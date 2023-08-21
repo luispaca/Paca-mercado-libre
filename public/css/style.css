@@ -213,6 +213,9 @@ b{
     .md-mobile {
       width: 48%;
     }
+    .nav-header-menu-switch{
+        display: none;
+    }
     p.text-icon{
         width: 100%;
     }
