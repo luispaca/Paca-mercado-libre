@@ -1,0 +1,132 @@
+:root{
+    --yellow: #EAC926;
+    --blue : #03264C;
+    --lightblue: #1259c3;
+    --darkGray : #666;
+    --lightGray : #ebebeb;
+    --green: #39b54a;
+    --white : #ffffff;
+    --black : #000000;
+}
+.register-user{
+    margin: auto;
+    
+}
+.register-user{
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    width: 600px;
+    background-color: var(--white);
+    border-radius: 6px;
+}
+legend{
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+.register-user form{
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.full-name input{
+    width: 100%;
+    padding: 0 5px;
+    background: 1px solid --darkGray;
+    outline: none;
+    height: 40px;
+}
+.user-name input{
+    width: 100%;
+    padding: 0 5px;
+    background: 1px solid --darkGray;
+    outline: none;
+    height: 40px;
+}
+.user-name input{
+    margin-top: 10px;
+}
+.birthdate .birth-date{
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.birthdate input{
+    width: 100%;
+    padding: 0 5px;
+    background: 1px solid --darkGray;
+    outline: none;
+    height: 40px;
+}
+.address input{
+    width: 100%;
+    padding: 0 5px;
+    background: 1px solid --darkGray;
+    outline: none;
+    height: 40px;
+}
+.address{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.perfil-user .perfil{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input [type="radio"]{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.category{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input[type="file"]{
+    display: none;
+}
+label.photo{
+    display: inline-block;
+    background: var(--lightblue);
+    color: var(--white);
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.password input{
+    width: 100%;
+    padding: 0 5px;
+    background: 1px solid --darkGray;
+    outline: none;
+    height: 40px;
+}
+.password input{
+    margin-top: 10px;
+}
+.re-password input{
+    width: 100%;
+    padding: 0 5px;
+    background: 1px solid --darkGray;
+    outline: none;
+    height: 40px;
+}
+.re-password input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.buttons button{
+    margin: 20px 0 20px 0;;
+    width: 30%;
+    height: 50px;
+    border: 1px solid;
+    background: var(--lightblue);
+    border-radius: 8px;
+    color: var(--white);
+    cursor: pointer;
+    outline: none;
+    align-content: center;
+}
+input:required:hover{
+    background-color: ivory;
+    border: none;
+    outline: 1px solid red;
+    border-radius: 5px;
+}
