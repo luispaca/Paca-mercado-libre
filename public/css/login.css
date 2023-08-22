@@ -63,7 +63,7 @@ button[type="submit"]{
     outline: none;
 }
 input:required:hover{
-    background-color: ivory;
+    background-color: lightcoral;
     border: none;
     outline: 1px solid red;
     border-radius: 5px;
