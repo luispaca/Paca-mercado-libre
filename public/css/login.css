@@ -9,9 +9,9 @@
     --black : #000000;
 }
 .formulario{
-    position: absolute;
+    margin: 30px auto 30px auto;
     left: 30%;
-    top: 50%;
+    top: 40%;
     width: 500px;
     background-color: var(--white);
     border-radius: 6px;
@@ -63,7 +63,7 @@ button[type="submit"]{
     outline: none;
 }
 input:required:hover{
-    background-color: lightcoral;
+    background-color: #fffff0;
     border: none;
     outline: 1px solid red;
     border-radius: 5px;

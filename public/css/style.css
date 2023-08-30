@@ -22,19 +22,19 @@ body.home{
 .nav-header{
     background-color: var(--yellow);
 }
+.nav-logo{
+    max-width: 250px;
+    flex: 1.7;
+}
 header{
     display: flex;
-    flex-wrap: wrap;
-}
-
-.nav-logo img{
-    width: 30%;
-    padding: 4px;
+    flex-direction: column;
 }
 .nav-search{
     margin-left: 5px;
 }
 .nav-search-input{
+    flex: 1;
     padding: 3px;
     border: none;
     border-radius: 5px;
@@ -47,20 +47,38 @@ p{
     text-align: center;
     margin: 5px;
 }
-.nav-header-lg{
+.nav-header-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px;
-    width: 50%;
 }
-.nav-header-lg{
-    align-self: center;
+.nav-header-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
 }
 .nav-menu{
     width: 100%;
     text-align: center;
 }
 .nav-menu-list{
+    display: flex;
+}
+ul.nav-menu-list li {
+    margin: 0 10px 0 10px;
+}
+.nav-menu-list{
     padding-top: 8px;
     padding-bottom: 8px;
+}
+.nav-header-plus{
+    display: flex;
+}
+ul.nav-header-plus li {
+    margin: 0 10px 0 10px;
 }
 .nav-header-plus{
     padding-top: 8px;
@@ -83,7 +101,6 @@ div i.fa-bars{
     border-radius: 20%;
     padding: 8px;
 }
-
 section.home-banner img{
 display: block;
 height: 100%;
@@ -163,8 +180,14 @@ article>div.details-product>div.truck-icon-container{
     margin-left: 8px;
     margin-right: 8px;
 }
-    span>i.fa-truck{
+span>i.fa-truck{
     color: var(--green);
+}
+.truck-icon-container>span>i.fa-truck{
+    transition: transform 0.3s ease;
+}
+.truck-icon-container>span>i:hover{
+    transform: rotate(-90deg);
 }
 .product-info-desc{
     color: var(--green);
@@ -179,8 +202,9 @@ article>div.details-product>div.truck-icon-container{
     font-size: 16px;
     margin-left: 8px;
 }
-footer{
-    display: flex;
+.lg-desktop{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transition: box-shadow 0.5s ease-in-out;
 }
 footer{
     text-align: center;
@@ -189,47 +213,74 @@ footer{
     padding: 10px;
     border-radius: 3px;
 }
-.contentinfo{
+.footer-container{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
 }
-footer>ul>li{
-    list-style: none;
+.info-site{
+    display: flex;
+    flex-direction: column;
 }
-footer>ul>li{
-    margin-bottom: 15px;
-}
+
 footer i{
     font-size: 2em;
     color: var(--lightblue);
 }
-b{
-    font-size: 10px;
+.info-site b{
+    font-size: 24px;
     color: var(--darkGray);
 }
- /* Tablet */
-@media (min-width: 481px) {
-    .md-mobile {
-      width: 48%;
+.info-site{
+    padding: 40px 50px;
+}
+.text-info{
+    color: var(--darkGray);
+}
+i.fa-solid {
+    margin-bottom: 15px;
+}
+.copy-right{
+    width: 100%;
+}
+/*MOBILE*/
+@media (min-width: 481px){
+    .nav-logo>img{
+        max-width: 150px;
     }
-    .nav-header-menu-switch{
-        /*display: none;*/
-    }
-    p.text-icon{
-        width: 100%;
+    .nav-header-menu {
+        display: none;
     }
 }
-/* Laptop */
-  @media (min-width: 769px) {
-    .lg-desktop {
-      width: 23%;
+/*TABLET & LAPTOP*/
+@media (min-width: 769px){
+    .nav-logo>img{
+        max-width: 150px;
     }
-    .recommendations-card {
-      box-shadow: none;
+    .footer-container {
+        flex-direction: row;
     }
-  }
-/* Desktop */
-@media (min-width: 1281px) {
-
+    .nav-header-menu {
+        display: none;
+    }
+    .product-info-name{
+        display: none;
+    }
+    .lg-desktop:hover .product-info-name{
+        display: block;
+    }
+    .md-mobile{
+        box-shadow: none;
+    }
+}
+/*DESKTOP*/
+@media (min-width: 1280px){
+    .burger-menu{
+        display: none;
+    }
+    .nav-header-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
 }

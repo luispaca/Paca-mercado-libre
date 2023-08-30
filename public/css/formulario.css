@@ -9,13 +9,9 @@
     --black : #000000;
 }
 .register-user{
-    margin: auto;
-    
-}
-.register-user{
-    position: absolute;
+    margin: 30px auto 30px auto;
     left: 30%;
-    top: 50%;
+    top: 35%;
     width: 600px;
     background-color: var(--white);
     border-radius: 6px;
@@ -31,14 +27,14 @@ legend{
 .full-name input{
     width: 100%;
     padding: 0 5px;
-    background: 1px solid --darkGray;
+    background: 1px solid;
     outline: none;
     height: 40px;
 }
 .user-name input{
     width: 100%;
     padding: 0 5px;
-    background: 1px solid --darkGray;
+    background: 1px solid;
     outline: none;
     height: 40px;
 }
@@ -52,14 +48,14 @@ legend{
 .birthdate input{
     width: 100%;
     padding: 0 5px;
-    background: 1px solid --darkGray;
+    background: 1px solid;
     outline: none;
     height: 40px;
 }
 .address input{
     width: 100%;
     padding: 0 5px;
-    background: 1px solid --darkGray;
+    background: 1px solid;
     outline: none;
     height: 40px;
 }
@@ -94,7 +90,7 @@ label.photo{
 .password input{
     width: 100%;
     padding: 0 5px;
-    background: 1px solid --darkGray;
+    background: 1px solid;
     outline: none;
     height: 40px;
 }
@@ -104,7 +100,7 @@ label.photo{
 .re-password input{
     width: 100%;
     padding: 0 5px;
-    background: 1px solid --darkGray;
+    background: 1px solid;
     outline: none;
     height: 40px;
 }
@@ -125,7 +121,7 @@ label.photo{
     align-content: center;
 }
 input:required:hover{
-    background-color: ivory;
+    background-color: #fffff0;
     border: none;
     outline: 1px solid red;
     border-radius: 5px;
